@@ -1,0 +1,317 @@
+Linux gcelab 5.10.0-26-cloud-amd64 #1 SMP Debian 5.10.197-1 (2023-09-29) x86_64 GNU/Linux
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Byte Order:                         Little Endian
+Address sizes:                      46 bits physical, 48 bits virtual
+CPU(s):                             2
+On-line CPU(s) list:                0,1
+Thread(s) per core:                 2
+Core(s) per socket:                 1
+Socket(s):                          1
+NUMA node(s):                       1
+Vendor ID:                          GenuineIntel
+CPU family:                         6
+Model:                              79
+Model name:                         Intel(R) Xeon(R) CPU @ 2.20GHz
+Stepping:                           0
+CPU MHz:                            2199.998
+BogoMIPS:                           4399.99
+Hypervisor vendor:                  KVM
+Virtualization type:                full
+L1d cache:                          32 KiB
+L1i cache:                          32 KiB
+L2 cache:                           256 KiB
+L3 cache:                           55 MiB
+NUMA node0 CPU(s):                  0,1
+Vulnerability Gather data sampling: Not affected
+Vulnerability Itlb multihit:        Not affected
+Vulnerability L1tf:                 Mitigation; PTE Inversion
+Vulnerability Mds:                  Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:             Mitigation; PTI
+Vulnerability Mmio stale data:      Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown
+Vulnerability Retbleed:             Mitigation; IBRS
+Vulnerability Spec rstack overflow: Not affected
+Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:           Mitigation; IBRS, IBPB conditional, STIBP conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Mitigation; Clear CPU buffers; SMT Host state unknown
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       135Mi       2.5Gi       0.0Ki       1.2Gi       3.5Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  368K  393M   1% /run
+/dev/sda1       9.7G  2.6G  6.7G  28% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      124M   11M  114M   9% /boot/efi
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:96:00:02 brd ff:ff:ff:ff:ff:ff
+    altname enp0s4
+    inet 10.150.0.2/32 brd 10.150.0.2 scope global dynamic ens4
+       valid_lft 3112sec preferred_lft 3112sec
+    inet6 fe80::4001:aff:fe96:2/64 scope link 
+       valid_lft forever preferred_lft forever
+gcelab
+    description: Computer
+    product: Google Compute Engine
+    vendor: Google
+    serial: GoogleCloud-52C318E9C6AC6D385A673C8A6915ABCA
+    width: 64 bits
+    capabilities: smbios-2.4 dmi-2.4 smp vsyscall32
+    configuration: boot=normal uuid=52C318E9-C6AC-6D38-5A67-3C8A6915ABCA
+  *-core
+       description: Motherboard
+       product: Google Compute Engine
+       vendor: Google
+       physical id: 0
+       serial: Board-GoogleCloud-52C318E9C6AC6D385A673C8A6915ABCA
+     *-firmware
+          description: BIOS
+          vendor: Google
+          physical id: 0
+          version: Google
+          date: 11/17/2023
+          size: 96KiB
+     *-cpu:0
+          description: CPU
+          product: Intel(R) Xeon(R) CPU @ 2.20GHz
+          vendor: Intel Corp.
+          physical id: 1001
+          bus info: cpu@0
+          slot: CPU 1
+          size: 2GHz
+          capacity: 2GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp x86-64 constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+     *-cpu:1
+          description: CPU
+          vendor: Google
+          physical id: 1002
+          bus info: cpu@1
+          slot: CPU 2
+          size: 2GHz
+          capacity: 2GHz
+     *-memory
+          description: System Memory
+          physical id: 200
+          size: 4GiB
+          capabilities: ecc
+          configuration: errordetection=multi-bit-ecc
+        *-bank
+             description: DIMM RAM Synchronous
+             physical id: 0
+             slot: DIMM 0
+             size: 4GiB
+             width: 64 bits
+     *-pci
+          description: Host bridge
+          product: 440FX - 82441FX PMC [Natoma]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+        *-isa
+             description: ISA bridge
+             product: 82371AB/EB/MB PIIX4 ISA
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-bridge UNCLAIMED
+             description: Bridge
+             product: 82371AB/EB/MB PIIX4 ACPI
+             vendor: Intel Corporation
+             physical id: 1.3
+             bus info: pci@0000:00:01.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bridge bus_master
+             configuration: latency=0
+        *-generic:0
+             description: Non-VGA unclassified device
+             product: Virtio SCSI
+             vendor: Red Hat, Inc.
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c040(size=64) memory:c0002000-c000207f
+           *-virtio0
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@0
+                logical name: scsi0
+                configuration: driver=virtio_scsi
+              *-disk
+                   description: SCSI Disk
+                   product: PersistentDisk
+                   vendor: Google
+                   physical id: 0.1.0
+                   bus info: scsi@0:0.1.0
+                   logical name: /dev/sda
+                   version: 1
+                   size: 10GiB (10GB)
+                   capabilities: gpt-1.00 partitioned partitioned:gpt
+                   configuration: ansiversion=6 guid=c6d96b2e-c02d-3f42-b1b6-ddf2f1f31266 logicalsectorsize=512 sectorsize=4096
+                 *-volume:0
+                      description: EXT4 volume
+                      vendor: Linux
+                      physical id: 1
+                      bus info: scsi@0:0.1.0,1
+                      logical name: /dev/sda1
+                      logical name: /
+                      version: 1.0
+                      serial: 1225d994-3cdc-4e39-8ca0-3245d6035b43
+                      size: 10111MiB
+                      capacity: 10111MiB
+                      capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                      configuration: created=2023-12-12 09:51:11 filesystem=ext4 lastmountpoint=/ modified=2023-12-28 17:46:59 mount.fstype=ext4 mount.options=rw,relatime,discard,errors=remount-ro mounted=2023-12-28 17:47:00 state=mounted
+                 *-volume:1
+                      description: BIOS Boot partition
+                      vendor: EFI
+                      physical id: e
+                      bus info: scsi@0:0.1.0,14
+                      logical name: /dev/sda14
+                      serial: 2f4b3caa-8146-5a46-a084-533049263323
+                      capacity: 3071KiB
+                      capabilities: nofs
+                 *-volume:2 UNCLAIMED
+                      description: Windows FAT volume
+                      vendor: mkfs.fat
+                      physical id: f
+                      bus info: scsi@0:0.1.0,15
+                      version: FAT16
+                      serial: d0f3-b58a
+                      size: 119MiB
+                      capacity: 123MiB
+                      capabilities: boot fat initialized
+                      configuration: FATs=2 filesystem=fat
+        *-network
+             description: Ethernet controller
+             product: Virtio network device
+             vendor: Red Hat, Inc.
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:c000(size=64) memory:c0001000-c000107f
+           *-virtio1
+                description: Ethernet interface
+                physical id: 0
+                bus info: virtio@1
+                logical name: ens4
+                serial: 42:01:0a:96:00:02
+                capabilities: ethernet physical
+                configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=10.150.0.2 link=yes multicast=yes
+        *-generic:1
+             description: Unclassified device
+             product: Virtio memory balloon
+             vendor: Red Hat, Inc.
+             physical id: 5
+             bus info: pci@0000:00:05.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:c0a0(size=32) memory:c0000000-c000007f
+           *-virtio2 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@2
+                configuration: driver=virtio_balloon
+        *-generic:2
+             description: Unclassified device
+             product: Virtio RNG
+             vendor: Red Hat, Inc.
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c080(size=32) memory:c0003000-c000303f
+           *-virtio3 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@3
+                configuration: driver=virtio_rng
+     *-pnp00:00
+          product: PnP device PNP0b00
+          physical id: 1
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-pnp00:01
+          product: PnP device PNP0303
+          physical id: 2
+          capabilities: pnp
+          configuration: driver=i8042 kbd
+     *-pnp00:02
+          product: PnP device PNP0f13
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=i8042 aux
+     *-pnp00:03
+          product: PnP device PNP0501
+          physical id: 4
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:04
+          product: PnP device PNP0501
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:05
+          product: PnP device PNP0501
+          physical id: 6
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:06
+          product: PnP device PNP0501
+          physical id: 7
+          capabilities: pnp
+          configuration: driver=serial
+System:    Host: gcelab Kernel: 5.10.0-26-cloud-amd64 x86_64 bits: 64 Console: N/A 
+           Distro: Debian GNU/Linux 11 (bullseye) 
+Machine:   Type: Kvm Mobo: Google model: Google Compute Engine serial: <superuser required> UEFI: Google 
+           v: Google date: 11/17/2023 
+CPU:       Info: Single Core model: Intel Xeon bits: 64 type: MT L2 cache: 55 MiB 
+           Speed: 2200 MHz min/max: N/A Core speeds (MHz): 1: 2200 2: 2200 
+Graphics:  Message: No Device data found. 
+           Display: server: No display server data found. Headless machine? tty: 111x39 
+           Message: Advanced graphics data unavailable in console. Try -G --display 
+Audio:     Message: No Device data found. 
+Network:   Device-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: N/A 
+           Device-2: Red Hat Virtio network driver: virtio-pci 
+           IF: ens4 state: up speed: -1 duplex: unknown mac: 42:01:0a:96:00:02 
+Drives:    Local Storage: total: 10 GiB used: 2.52 GiB (25.2%) 
+           ID-1: /dev/sda model: PersistentDisk size: 10 GiB 
+Partition: ID-1: / size: 9.62 GiB used: 2.51 GiB (26.1%) fs: ext4 dev: /dev/sda1 
+           ID-2: /boot/efi size: 123.7 MiB used: 10.6 MiB (8.6%) fs: vfat dev: /dev/sda15 
+Swap:      Alert: No Swap data was found. 
+Sensors:   Message: No sensors data was found. Is sensors configured? 
+Info:      Processes: 81 Uptime: 32m Memory: 3.84 GiB used: 403.9 MiB (10.3%) Init: systemd runlevel: 5 
+           Shell: Bash inxi: 3.3.01 
